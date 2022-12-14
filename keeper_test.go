@@ -205,7 +205,7 @@ func TestGetOrSet(t *testing.T) {
 		assert.EqualValues(t, val, myVar)
 	})
 
-	t.Run("Already cached, nil value", func(t *testing.T) {
+	t.Run("Already cached, nil value 1", func(t *testing.T) {
 		testKey := "just-a-key-nil"
 		err := m.Set(testKey, string(nilValue))
 		require.NoError(t, err)
