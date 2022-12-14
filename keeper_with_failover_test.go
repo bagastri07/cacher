@@ -31,7 +31,7 @@ func Test_keeperWithFailover_GetOrSet(t *testing.T) {
 		TestString:     "string",
 		TestInt64:      1640995120740899877,
 		TestFloat64:    234.23324,
-		TestTime:       time.UnixMilli(3276483223),
+		TestTime:       time.UnixMilli(3276483223).UTC(),
 		TestNilString:  nil,
 		TestNilInt64:   nil,
 		TestNilFloat64: nil,
