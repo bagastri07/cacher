@@ -20,7 +20,6 @@ type (
 	}
 )
 
-// WithTTL define custom TTL used in GetOrSet
 func WithTTL(ttl time.Duration) func(Item) {
 	return func(i Item) {
 		i.SetTTL(ttl)
